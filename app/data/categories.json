@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "categoryId":"the-best",
+      "name": "The Best"
+    },
+     {
+      "categoryId":"the-best-price",
+       "name": "The Best Price"
+    },
+     {
+      "categoryId": "new",
+       "name": "New"
+    },
+     {
+      "categoryId":"sales",
+       "name": "Sales"
+    },
+     {
+      "categoryId":"featured",
+       "name": "Featured"
+    },
+    {
+      "categoryId":"exclusive",
+      "name": "Exclusive"
+    }
+  ]
+}

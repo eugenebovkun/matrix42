@@ -1,0 +1,13 @@
+<div class="text-center">
+    <div class="">It's a basket</div>
+    <div>Items in basket: {{basket.items.length}}</div>
+    <div class="items-container">
+        <div class="item" ng-repeat="item in basket.items">
+            <div class="item-details"><p>{{item.getName()}}</p>  <p>price for one: {{item.getPrice()}}</p>   <p> Numbers: {{item.counts}}</p>  <p>Total: {{item.getTotalPrice()}}</p></div> <div class="btn btn-warning" ng-click="deleteItem(item)">Delete</div >
+        </div>
+
+
+        <h3>Amount: {{basket.amount}}</h3>
+    </div>
+</div>
+

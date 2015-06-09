@@ -1,0 +1,24 @@
+<div class="shop" active-category="activeCategory">
+    <div category-select class="col-md-2 categories" active-category-name="activeCategoryName">
+    </div>
+
+    <div class="col-md-10 item-grid" active-category-id="activeCategoryId">
+        <div class="col-md-4"
+             ng-repeat="item in items.items | filter:{categoryId: activeCategoryName} | filter:{name:searchQuery}"
+             class="thumbnail phone-listing">
+
+
+            <p>Name: {{item.name}}</p>
+            <img src="{{'../app/data/images/'+item.image}}"/>
+
+            <p class="item-description">Description: {{item.description}}</p>
+
+            <p>Category: {{item.categoryId}}</p>
+
+            <p>Price: {{item.price}}</p>
+
+            <div class="btn btn-default" ng-click="addToBasket(item)">Add to Basket</div>
+
+        </div>
+    </div>
+</div>

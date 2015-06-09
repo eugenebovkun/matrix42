@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "id": "item1",
+      "name": "Coll device CD-34",
+      "image": "item1.jpg",
+      "description": "It`s realy cool staff, you definitely should try it.",
+      "categoryId": "the-best",
+      "price": "300"
+    },
+    {
+      "id": "item2",
+      "name": "Phone-minator",
+      "image": "item2.jpg",
+      "description": "This phone totally dominate on other phones ",
+      "categoryId": "the-best",
+      "price": "300"
+    },
+    {
+      "id": "item3",
+      "name": "Sam Phone SP-23",
+      "image": "item3.jpg",
+      "description": "This item have a great price. ",
+      "categoryId": "the-best-price",
+      "price": "200"
+    },
+    {
+      "id": "item4",
+      "name": "Sam Phone SP-43",
+      "image": "item4.jpg",
+      "description": "new model of epic device SP-23",
+      "categoryId": "the-best-price",
+      "price": "250"
+    },
+    {
+      "id": "item5",
+      "name": "F-one",
+      "image": "item5.jpg",
+      "description": "New top fashion phone specially for you",
+      "categoryId": "new",
+      "price": "500"
+    },
+    {
+      "id": "item6",
+      "name": "phone",
+      "image": "item6.jpg",
+      "description": "Just for calls and sms, but Super sales -99%",
+      "categoryId": "sales",
+      "price": "3"
+    }
+  ]
+}

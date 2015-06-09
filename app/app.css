@@ -1,0 +1,41 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.search {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.items-container .item:nth-child(2n){
+  background: #e2e2e2;
+}
+
+.items-container .item:nth-child(2n+1){
+  background: #979797;
+}
+
+.item-details, .item-details p{
+  display: inline-block;
+  margin: 10px;
+}

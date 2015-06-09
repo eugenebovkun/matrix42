@@ -1,0 +1,8 @@
+<p>
+    Categories:
+</p>
+<ul class="categories" ng-click="blabla()">
+    <li ng-repeat="category in categories.categories" ng-click="setActiveCategory(category)" ng-class="{selected: isActive(category)}">
+        <p>{{category.name}}</p>
+    </li>
+</ul>
