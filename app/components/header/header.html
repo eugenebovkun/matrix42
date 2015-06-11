@@ -1,5 +1,14 @@
-<div>
-    <div class="">My Angular shop</div>
-    <div>Items in basket: {{basket.count}} </div>
-    <div class="search">Search: <input ng-model="searchQuery" type="text"/></div>
+<div class="header navbar navbar-static-top">
+
+    <a href="#/" class="navbar-brand">
+        Angular Phone Shop
+    </a>
+
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#/shop">shop</a></li>
+        <li><a href="#/basket">basket  {{basket.count}}</a><!--<p class="glyphicon glyphicon-shopping-cart"></p><p class="basket-item-count">  </p>--></li>
+        <li class="search"><a><input placeholder="     search" ng-model="searchQuery" type="text"/></a> </li>
+
+    </ul>
+
 </div>

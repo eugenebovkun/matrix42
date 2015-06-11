@@ -1,23 +1,24 @@
-<div class="shop" active-category="activeCategory">
+<div class="shop container-fluid" active-category="activeCategory">
     <div category-select class="col-md-2 categories" active-category-name="activeCategoryName">
     </div>
 
     <div class="col-md-10 item-grid" active-category-id="activeCategoryId">
-        <div class="col-md-4"
+        <div class="col-md-4 col-md-offset-1 col-xs-4 col-xs-offset-1"
              ng-repeat="item in items.items | filter:{categoryId: activeCategoryName} | filter:{name:searchQuery}"
              class="thumbnail phone-listing">
 
+            <div class="item-image">
+                <img src="{{'../app/data/images/'+item.image}}"/>
+            </div>
 
-            <p>Name: {{item.name}}</p>
-            <img src="{{'../app/data/images/'+item.image}}"/>
+            <div class="item-details">
+                <div><strong>Name:</strong> {{item.name}}</div>
+                <div class="item-description"><strong>Description:</strong> {{item.description}}</div>
+                <div><strong>Category:</strong> {{item.categoryId}}</div>
+                <div><strong>Price:</strong> {{item.price}}</div>
+            </div>
 
-            <p class="item-description">Description: {{item.description}}</p>
-
-            <p>Category: {{item.categoryId}}</p>
-
-            <p>Price: {{item.price}}</p>
-
-            <div class="btn btn-default" ng-click="addToBasket(item)">Add to Basket</div>
+            <button class="btn btn-lg  btn-primary" ng-click="addToBasket(item)">Add to Basket</button>
 
         </div>
     </div>
